@@ -27,9 +27,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <main className="flex min-h-screen flex-col items-center p-24">
-            <div className="flex z-10 w-full max-w-5xl items-center justify-between text-sm lg:flex">
+            <div className=" flex z-10 w-full max-w-5xl items-center justify-between text-sm lg:flex">
               <Link href="/">
-                <h2 className="text-2xl font-bold">Search For Your Pokemon</h2>
+                <h2 className="text-2xl text-bold mt-10">
+                  Search For Your Pokemon
+                </h2>
               </Link>
               <div className="flex gap-18">
                 <ModeToggle />
