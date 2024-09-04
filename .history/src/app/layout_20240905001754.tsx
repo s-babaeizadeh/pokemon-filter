@@ -6,7 +6,6 @@ import Link from "next/link";
 import { ModeToggle } from "@/components/DarkModeToggle";
 
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,8 +29,13 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <main className="flex min-h-screen flex-col items-center p-24">
-            <div className="flex w-full items-center justify-between">
-              <Navbar />
+            <div className="flex z-10 w-full max-w-5xl items-center justify-between text-sm lg:flex">
+              <Link href="/" className="cursor-pointer">
+                <Image src="/poki.png" alt="Logo" width={60} height={60} />
+              </Link>
+              <div className="flex gap-18">
+                <ModeToggle />
+              </div>
             </div>
             <div className="mt-10">{children}</div>
           </main>

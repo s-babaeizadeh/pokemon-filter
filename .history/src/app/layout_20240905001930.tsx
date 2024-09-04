@@ -30,7 +30,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <main className="flex min-h-screen flex-col items-center p-24">
-            <div className="flex w-full items-center justify-between">
+            <div className="flex z-10 w-full max-w-5xl items-center justify-between text-sm lg:flex">
               <Navbar />
             </div>
             <div className="mt-10">{children}</div>

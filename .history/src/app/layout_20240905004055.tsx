@@ -31,6 +31,12 @@ export default function RootLayout({
         >
           <main className="flex min-h-screen flex-col items-center p-24">
             <div className="flex w-full items-center justify-between">
+              {/* <Link href="/" className="cursor-pointer">
+                <Image src="/poki.png" alt="Logo" width={60} height={60} />
+              </Link>
+              <div className="flex gap-18">
+                <ModeToggle />
+              </div> */}
               <Navbar />
             </div>
             <div className="mt-10">{children}</div>

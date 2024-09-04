@@ -56,10 +56,7 @@ export default async function PokemonPage({
           );
         })}
       </div>
-      <Link
-        href="/"
-        className="flex justify-center bg-indigo-900 text-white hover:bg-blue-950 py-2 px-4 rounded-md mt-10"
-      >
+      <Link href="/" className="flex justify-center">
         Back to Home
       </Link>
     </>

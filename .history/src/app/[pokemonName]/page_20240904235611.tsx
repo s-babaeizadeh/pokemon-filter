@@ -1,7 +1,6 @@
 import { getPokemon } from "@/components/lib/pokemonAPI";
 import { PokemonImage } from "@/components/pokemon-image";
 import { Progress } from "@/components/ui/progress";
-import Link from "next/link";
 
 interface StatProps {
   base_stat: number;
@@ -56,12 +55,7 @@ export default async function PokemonPage({
           );
         })}
       </div>
-      <Link
-        href="/"
-        className="flex justify-center bg-indigo-900 text-white hover:bg-blue-950 py-2 px-4 rounded-md mt-10"
-      >
-        Back to Home
-      </Link>
+      <div>button</div>
     </>
   );
 }
