@@ -45,6 +45,7 @@ export function PokemonGrid({ pokemonList }: PokemonGridProps) {
           </Label>
           <Input
             type="text"
+            className="border-solid dark:border-white"
             value={searchText}
             autoComplete="off"
             id="pokemonName"
